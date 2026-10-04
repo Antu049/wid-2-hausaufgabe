@@ -3,10 +3,14 @@ import data from "./unfaelle.json";
 
 export default function App() {
   const unfaelle = data; // Unfaelle ist ein Array mit Objekten aus der JSON Datei.
-
+  console.log(unfaelle[unfaelle.length -1]);
+  console.log(unfaelle[unfaelle.length -1].id_unfall);
+  console.log(unfaelle[unfaelle.length -1].schwere);
+  const idUndSchwere = `${unfaelle[unfaelle.length -1].id_unfall}:${unfaelle[unfaelle.length -1].schwere}`;
+  
   return (
     <div className="App">
-      <div>{}</div>
+      <div>{idUndSchwere}</div>
     </div>
   );
 }
