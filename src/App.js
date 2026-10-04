@@ -16,7 +16,10 @@ export default function App() {
   
   return (
     <div className="App">
-      <div>{idUndSchwere}</div> 
+      <div>{idUndSchwere}</div>
+      <ol>
+        {unfaelle.map(c => (<li key={c.id_unfall}>{c.id_unfall}</li>))}
+      </ol>
     </div>
   );
 }
