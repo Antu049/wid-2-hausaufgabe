@@ -11,6 +11,9 @@ export default function App() {
   const unfaelleNebenstrassen = unfaelle.filter(a=> a.strasseart === "Nebenstrasse");
   console.log(unfaelleNebenstrassen)
 
+  const unfallVelo = unfaelle.find(b=> b.jahr === "2015" && b.monat=== 11 && b.fahrrd_bet === true)  
+  console.log(unfallVelo)
+  
   return (
     <div className="App">
       <div>{idUndSchwere}</div> 
