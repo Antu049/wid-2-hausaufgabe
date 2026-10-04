@@ -8,9 +8,12 @@ export default function App() {
   console.log(unfaelle[unfaelle.length -1].schwere);
   const idUndSchwere = `${unfaelle[unfaelle.length -1].id_unfall}:${unfaelle[unfaelle.length -1].schwere}`;
   
+  const unfaelleNebenstrassen = unfaelle.filter(a=> a.strasseart === "Nebenstrasse");
+  console.log(unfaelleNebenstrassen)
+
   return (
     <div className="App">
-      <div>{idUndSchwere}</div>
+      <div>{idUndSchwere}</div> 
     </div>
   );
 }
